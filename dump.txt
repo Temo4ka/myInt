@@ -1,0 +1,15 @@
+myInt:41 constructed from value, value:3
+myInt:18467 constructed from value, value:-6
+myInt:6334 constructed, value:36
+myInt:26500 constructed from 6334, value:36
+operator * was called, 26500:current value is 36
+myInt:19169 constructed from 26500, value:36
+myInt:15724 constructed, value:-18
+myInt:11478 constructed from 15724, value:-18
+operator * was called, 11478:current value is -18
+myInt:29358 constructed from 11478, value:-18
+myInt:26962 constructed, value:18
+myInt:24464 constructed from 26962, value:18
+operator + was called, 24464:current value is 18
+myInt:5705 constructed from 24464, value:18
+myInt:28145 constructed from 5705, value:18

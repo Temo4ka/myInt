@@ -1,0 +1,34 @@
+digraph Varriables {
+  rankdir = TB
+  v41[shape = Mrecord, style = filled, fillcolor = lightgreen, label = "id : 41 | value : 3 "];
+  v18467[shape = Mrecord, style = filled, fillcolor = lightgreen, label = "id : 18467 | value : -6 "];
+  v6334[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj | id : 6334 | value : 36 "];
+  v26500[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj(copied) | id : 26500 | value : 36 "];
+  v6334 -> v26500[color = red, label = "copying"];
+  op1[shape = circle, style = filled, fillcolor = orange, label = "*"];
+  v18467->op1;
+  v18467->op1;
+  op1->v26500;
+  v19169[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj(copied) | id : 19169 | value : 36 "];
+  v26500 -> v19169[color = red, label = "copying"];
+  v15724[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj | id : 15724 | value : -18 "];
+  v11478[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj(copied) | id : 11478 | value : -18 "];
+  v15724 -> v11478[color = red, label = "copying"];
+  op2[shape = circle, style = filled, fillcolor = orange, label = "*"];
+  v41->op2;
+  v18467->op2;
+  op2->v11478;
+  v29358[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj(copied) | id : 29358 | value : -18 "];
+  v11478 -> v29358[color = red, label = "copying"];
+  v26962[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj | id : 26962 | value : 18 "];
+  v24464[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj(copied) | id : 24464 | value : 18 "];
+  v26962 -> v24464[color = red, label = "copying"];
+  op3[shape = circle, style = filled, fillcolor = orange, label = "+"];
+  v29358->op3;
+  v19169->op3;
+  op3->v24464;
+  v5705[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj(copied) | id : 5705 | value : 18 "];
+  v24464 -> v5705[color = red, label = "copying"];
+  v28145[shape = Mrecord, style = filled, fillcolor = pink, label = "tmp_obj(copied) | id : 28145 | value : 18 "];
+  v5705 -> v28145[color = red, label = "copying"];
+}
