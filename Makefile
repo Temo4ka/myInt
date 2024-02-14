@@ -1,4 +1,4 @@
 all:
-	g++ -fno-elide-constructors myInt.cpp main.cpp -o run.exe
+	g++ -fno-elide-constructors ./rsc/myInt.cpp ./src/main.cpp -o run.exe
 dot:
-	dot -Tpng grvz.dot -o output4.png
+	dot -Tpng ./logs/grvz.dot -o outputPics/output4.png

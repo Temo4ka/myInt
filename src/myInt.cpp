@@ -2,8 +2,8 @@
 #include "myInt.h"
 
 #ifdef DUMPING
-FILE *logFile = fopen("dump.txt", "w");
-FILE *dotFile = fopen("grvz.dot", "w");
+FILE *logFile = fopen("./logs/dump.txt", "w");
+FILE *dotFile = fopen("./logs/grvz.dot", "w");
 int operators = 0;
 #endif
 
