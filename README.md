@@ -24,3 +24,12 @@ myInt& myInt::operator =(myInt &&other);
 ```
 Теперь имеем:
 ![transfering](/outputPics/output2.png)
+
+Заметим, что можно и выгодно произвести следующую замену:
+```
+ + => +=
+```
+Итог:
+![transfering2](/outputPics/output3.png)
+
+Как итог, временных объектов стало на 7 меньше
