@@ -13,7 +13,7 @@
 ```
 
 Без каких либо оптимизаций получим следующую диаграмму:
-[copying](/outputPics/output1.png)
+![copying](/outputPics/output1.png)
 
 Розовым помечены временные объекты, их количество мы и попытаемся минимизировать.
 Для этого добавии оператор переноса и конструктор для не константного rvalue:
@@ -23,4 +23,4 @@ myInt::myInt(myInt&& x);
 myInt& myInt::operator =(myInt &&other);
 ```
 Теперь имеем:
-[transfering](/outputPics/output2.png)
+![transfering](/outputPics/output2.png)
